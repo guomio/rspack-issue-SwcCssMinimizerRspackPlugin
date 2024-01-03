@@ -1,6 +1,8 @@
 import path from "path";
 import { fileURLToPath } from "url";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import rspack from "@rspack/core";
+import CssMinimizerPlugin from 'css-minimizer-webpack-plugin'; 
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const isRunningWebpack = !!process.env.WEBPACK;
@@ -29,6 +31,10 @@ const config = {
   experiments: {
     css: true,
   },
+  optimization: {
+    minimize: true,
+    minimizer: [isRunningWebpack ? new CssMinimizerPlugin() : new rspack.SwcCssMinimizerRspackPlugin()]
+  }
 };
 
 export default config;

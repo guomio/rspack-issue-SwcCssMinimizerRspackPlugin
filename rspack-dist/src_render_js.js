@@ -5,7 +5,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   render: function() { return render; }
 });
-/* harmony import */var _render_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/* ./render.css */"./src/render.css");
+/* harmony import */var _render_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./render.css */"./src/render.css");
 
  function render() {
     const el = document.createElement('div');

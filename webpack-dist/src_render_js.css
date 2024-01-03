@@ -1,4 +1,1 @@
-.text {
-    color: blue;
-}
-head{--webpack-rspack-repro-src_render_js:\.\/src\/render\.css;}
+.text{background:conic-gradient(from -160deg at 50% 50%,#e92a67 0deg,#a853ba 120deg,#2a8af6 240deg,#e92a67 1turn);color:blue}head{--webpack-rspack-repro-src_render_js:\.\/src\/render\.css}
